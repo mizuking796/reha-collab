@@ -386,66 +386,34 @@ body {
   line-height: 2;
 }
 
-.contact-form {
+.contact-action {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
-.form-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
+.contact-text {
+  font-size: 15px;
+  color: #666;
 }
 
-.form-row label {
-  width: 80px;
-  font-size: 14px;
-  color: #333;
-  padding-top: 8px;
-  flex-shrink: 0;
-}
-
-.required {
-  color: #E74C3C;
-}
-
-.form-row input,
-.form-row textarea {
-  flex: 1;
-  padding: 10px 12px;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  font-size: 14px;
-  font-family: inherit;
-  transition: border-color 0.2s;
-}
-
-.form-row input:focus,
-.form-row textarea:focus {
-  outline: none;
-  border-color: #E74C3C;
-}
-
-.form-row textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.submit-btn {
-  align-self: flex-end;
-  padding: 10px 32px;
+.contact-btn {
+  display: inline-block;
+  padding: 16px 48px;
   background: #E74C3C;
   color: #fff;
-  border: none;
+  text-decoration: none;
+  border-radius: 50px;
   font-size: 14px;
   font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
-.submit-btn:hover {
+.contact-btn:hover {
   background: #C0392B;
+  transform: scale(1.02);
 }
 
 /* フッター */
@@ -540,19 +508,5 @@ body {
     text-align: center;
     padding-bottom: 24px;
     border-bottom: 1px solid #eee;
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .form-row label {
-    width: auto;
-    padding-top: 0;
-  }
-
-  .submit-btn {
-    align-self: stretch;
   }
 }
