@@ -155,6 +155,90 @@ body {
   color: #fff;
 }
 
+/* スカウターアイコン */
+.scouter-icon {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #39ff14;
+  box-shadow:
+    0 0 10px rgba(57, 255, 20, 0.5),
+    inset 0 0 20px rgba(57, 255, 20, 0.1);
+}
+
+.scouter-icon span {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+}
+
+.scouter-icon .icon-accent {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: #39ff14;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #39ff14;
+  animation: neon-blink 2s ease-in-out infinite;
+}
+
+@keyframes neon-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.scouter-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(57, 255, 20, 0.1) 0%, transparent 50%);
+}
+
+/* 目アイコン */
+.eye-icon {
+  position: relative;
+}
+
+.eye-design {
+  position: relative;
+  width: 48px;
+  height: 28px;
+}
+
+.eye-outer {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: #1a3a4a;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.eye-inner::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
 .app-name {
   font-size: 20px;
   font-weight: 700;
@@ -179,10 +263,54 @@ body {
   color: #888;
 }
 
+/* サービスセクション */
+.services {
+  padding: 80px 24px;
+  background: #fff;
+}
+
+.service-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.service-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  color: #E74C3C;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.service-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.9;
+}
+
 /* 法人情報 */
 .about {
   padding: 80px 24px;
-  background: #fff;
+  background: #fafafa;
 }
 
 .about-content {
@@ -217,35 +345,107 @@ body {
 .info-item dd {
   font-size: 14px;
   color: #333;
+  line-height: 1.8;
+}
+
+.info-item dd strong {
+  color: #222;
 }
 
 /* お問い合わせ */
 .contact {
   padding: 80px 24px;
-  text-align: center;
+  background: #fff;
 }
 
-.contact-text {
+.contact-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  border-top: 3px solid #E74C3C;
+  padding-top: 40px;
+}
+
+.contact-info {
+  padding-right: 24px;
+}
+
+.org-name {
   font-size: 16px;
-  color: #666;
-  margin-bottom: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 24px;
 }
 
-.contact-btn {
-  display: inline-block;
-  padding: 16px 48px;
+.contact-details {
+  font-size: 13px;
+  color: #666;
+  line-height: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.form-row label {
+  width: 80px;
+  font-size: 14px;
+  color: #333;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.required {
+  color: #E74C3C;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #E74C3C;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  align-self: flex-end;
+  padding: 10px 32px;
   background: #E74C3C;
   color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
+  border: none;
   font-size: 14px;
   font-weight: 500;
-  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.contact-btn:hover {
+.submit-btn:hover {
   background: #C0392B;
-  transform: scale(1.02);
 }
 
 /* フッター */
@@ -328,5 +528,31 @@ body {
 
   .contact {
     padding: 60px 20px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-info {
+    padding-right: 0;
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-row label {
+    width: auto;
+    padding-top: 0;
+  }
+
+  .submit-btn {
+    align-self: stretch;
   }
 }
