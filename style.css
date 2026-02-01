@@ -480,6 +480,15 @@ body {
     padding: 60px 20px;
   }
 
+  .contact-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
   .contact-btn {
     padding: 16px 40px;
     font-size: 14px;
@@ -488,5 +497,6 @@ body {
   .contact-email {
     font-size: 12px;
     word-break: break-all;
+    text-align: center;
   }
 }
