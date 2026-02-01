@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- 花びら（赤） -->
+  <ellipse cx="50" cy="25" rx="18" ry="22" fill="#E74C3C"/>
+  <ellipse cx="75" cy="50" rx="22" ry="18" fill="#E74C3C"/>
+  <ellipse cx="50" cy="75" rx="18" ry="22" fill="#E74C3C"/>
+  <ellipse cx="25" cy="50" rx="22" ry="18" fill="#E74C3C"/>
+  <!-- 内側の輪（オレンジ） -->
+  <circle cx="50" cy="50" r="24" fill="none" stroke="#F39800" stroke-width="8"/>
+  <!-- 中心（黄色） -->
+  <circle cx="50" cy="50" r="10" fill="#F7DC6F"/>
+</svg>
