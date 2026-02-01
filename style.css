@@ -356,64 +356,43 @@ body {
 .contact {
   padding: 80px 24px;
   background: #fff;
+  text-align: center;
 }
 
-.contact-wrapper {
-  max-width: 900px;
+.contact-content {
+  max-width: 600px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 48px;
-  border-top: 3px solid #E74C3C;
-  padding-top: 40px;
-}
-
-.contact-info {
-  padding-right: 24px;
-}
-
-.org-name {
-  font-size: 16px;
-  font-weight: 700;
-  color: #333;
-  line-height: 1.8;
-  margin-bottom: 24px;
-}
-
-.contact-details {
-  font-size: 13px;
-  color: #666;
-  line-height: 2;
-}
-
-.contact-action {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
 }
 
 .contact-text {
-  font-size: 15px;
+  font-size: 16px;
   color: #666;
+  margin-bottom: 32px;
 }
 
 .contact-btn {
   display: inline-block;
-  padding: 16px 48px;
+  padding: 18px 56px;
   background: #E74C3C;
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
 }
 
 .contact-btn:hover {
   background: #C0392B;
-  transform: scale(1.02);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.contact-email {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #999;
 }
 
 /* フッター */
@@ -498,15 +477,4 @@ body {
     padding: 60px 20px;
   }
 
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .contact-info {
-    padding-right: 0;
-    text-align: center;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #eee;
-  }
 }
