@@ -480,4 +480,13 @@ body {
     padding: 60px 20px;
   }
 
+  .contact-btn {
+    padding: 16px 40px;
+    font-size: 14px;
+  }
+
+  .contact-email {
+    font-size: 12px;
+    word-break: break-all;
+  }
 }
