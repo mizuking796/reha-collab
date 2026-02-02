@@ -239,6 +239,60 @@ body {
   border-radius: 50%;
 }
 
+/* まちがいさがしアイコン */
+.spot-diff-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.spot-diff-design {
+  position: relative;
+  width: 48px;
+  height: 40px;
+}
+
+.spot-img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.spot-img-1 {
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 182, 193, 0.5));
+}
+
+.spot-img-2 {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.5), rgba(255, 255, 255, 0.5));
+  animation: spot-blink 1.5s ease-in-out infinite;
+}
+
+.spot-sparkle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  animation: sparkle-pulse 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes spot-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes sparkle-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
 .app-name {
   font-size: 20px;
   font-weight: 700;
