@@ -338,6 +338,97 @@ body {
   }
 }
 
+/* 転倒検証アイコン（骨格図） */
+.skeleton-icon {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(149, 165, 166, 0.4);
+}
+
+.skeleton-design {
+  position: relative;
+  width: 40px;
+  height: 50px;
+}
+
+/* 頭 */
+.skeleton-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: #ecf0f1;
+  border-radius: 50%;
+}
+
+/* 背骨 */
+.skeleton-spine {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 18px;
+  background: #bdc3c7;
+  border-radius: 2px;
+}
+
+/* 腕 */
+.skeleton-arms {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: #bdc3c7;
+  border-radius: 2px;
+}
+
+/* 左脚 */
+.skeleton-leg-l {
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  width: 3px;
+  height: 20px;
+  background: #bdc3c7;
+  border-radius: 2px;
+  transform: rotate(-10deg);
+  transform-origin: top center;
+}
+
+/* 右脚 */
+.skeleton-leg-r {
+  position: absolute;
+  bottom: 0;
+  right: 8px;
+  width: 3px;
+  height: 20px;
+  background: #bdc3c7;
+  border-radius: 2px;
+  transform: rotate(10deg);
+  transform-origin: top center;
+}
+
+/* 警告マーク */
+.skeleton-alert {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 16px;
+  color: #e74c3c;
+  text-shadow: 0 0 6px rgba(231, 76, 60, 0.6);
+  animation: alert-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes alert-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 .app-name {
   font-size: 20px;
   font-weight: 700;
