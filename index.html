@@ -94,15 +94,21 @@
 
       <!-- 転倒検証 -->
       <a href="https://mizuking796.github.io/fall-detection/" class="app-card" target="_blank">
-        <div class="app-icon skeleton-icon" style="background: linear-gradient(135deg, #2c3e50, #1a1a2e);">
-          <div class="skeleton-design">
-            <div class="skeleton-head"></div>
-            <div class="skeleton-spine"></div>
-            <div class="skeleton-arms"></div>
-            <div class="skeleton-leg-l"></div>
-            <div class="skeleton-leg-r"></div>
-            <div class="skeleton-leg-r2"></div>
-          </div>
+        <div class="app-icon" style="background: linear-gradient(135deg, #2c3e50, #1a1a2e);">
+          <svg viewBox="0 0 50 50" width="50" height="50" fill="#ecf0f1">
+            <!-- 頭 -->
+            <circle cx="38" cy="10" r="6"/>
+            <!-- 胴体 -->
+            <rect x="18" y="14" width="18" height="7" rx="3" transform="rotate(-25 27 17)"/>
+            <!-- 左腕（上） -->
+            <rect x="8" y="6" width="14" height="5" rx="2" transform="rotate(-50 15 8)"/>
+            <!-- 右腕（下） -->
+            <rect x="30" y="22" width="12" height="5" rx="2" transform="rotate(25 36 24)"/>
+            <!-- 左脚 -->
+            <rect x="6" y="32" width="16" height="6" rx="3" transform="rotate(15 14 35)"/>
+            <!-- 右脚 -->
+            <rect x="18" y="38" width="16" height="6" rx="3" transform="rotate(-25 26 41)"/>
+          </svg>
         </div>
         <h3 class="app-name">転倒検証</h3>
         <p class="app-desc">姿勢推定による転倒検証ツール。複数ルールによる検知精度の研究・検証用。</p>
