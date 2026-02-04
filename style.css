@@ -338,95 +338,87 @@ body {
   }
 }
 
-/* 転倒検証アイコン（骨格図） */
+/* 転倒検証アイコン（転倒ピクトグラム） */
 .skeleton-icon {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(149, 165, 166, 0.4);
 }
 
 .skeleton-design {
   position: relative;
-  width: 40px;
+  width: 50px;
   height: 50px;
+  transform: rotate(-45deg);
 }
 
 /* 頭 */
 .skeleton-head {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 2px;
+  left: 18px;
   width: 14px;
   height: 14px;
   background: #ecf0f1;
   border-radius: 50%;
 }
 
-/* 背骨 */
+/* 胴体 */
 .skeleton-spine {
   position: absolute;
-  top: 13px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 3px;
+  top: 14px;
+  left: 22px;
+  width: 6px;
   height: 18px;
-  background: #bdc3c7;
-  border-radius: 2px;
+  background: #ecf0f1;
+  border-radius: 3px;
 }
 
-/* 腕 */
+/* 左腕（上に伸ばす） */
 .skeleton-arms {
   position: absolute;
-  top: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 3px;
-  background: #bdc3c7;
-  border-radius: 2px;
+  top: 8px;
+  left: 4px;
+  width: 18px;
+  height: 5px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  transform: rotate(-30deg);
+}
+
+/* 右腕 */
+.skeleton-leg-l {
+  position: absolute;
+  top: 18px;
+  left: 28px;
+  width: 16px;
+  height: 5px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  transform: rotate(20deg);
 }
 
 /* 左脚 */
-.skeleton-leg-l {
+.skeleton-leg-r {
   position: absolute;
-  bottom: 0;
-  left: 8px;
-  width: 3px;
-  height: 20px;
-  background: #bdc3c7;
-  border-radius: 2px;
-  transform: rotate(-10deg);
-  transform-origin: top center;
+  top: 30px;
+  left: 10px;
+  width: 18px;
+  height: 5px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  transform: rotate(-20deg);
 }
 
 /* 右脚 */
-.skeleton-leg-r {
+.skeleton-leg-r2 {
   position: absolute;
-  bottom: 0;
-  right: 8px;
-  width: 3px;
-  height: 20px;
-  background: #bdc3c7;
-  border-radius: 2px;
-  transform: rotate(10deg);
-  transform-origin: top center;
-}
-
-/* 警告マーク */
-.skeleton-alert {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  font-size: 16px;
-  color: #e74c3c;
-  text-shadow: 0 0 6px rgba(231, 76, 60, 0.6);
-  animation: alert-pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes alert-pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  top: 32px;
+  left: 24px;
+  width: 16px;
+  height: 5px;
+  background: #ecf0f1;
+  border-radius: 3px;
+  transform: rotate(40deg);
 }
 
 .app-name {
