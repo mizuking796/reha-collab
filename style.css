@@ -341,84 +341,83 @@ body {
 /* 転倒検証アイコン（転倒ピクトグラム） */
 .skeleton-icon {
   position: relative;
-  overflow: hidden;
 }
 
 .skeleton-design {
   position: relative;
-  width: 50px;
-  height: 50px;
-  transform: rotate(-45deg);
+  width: 55px;
+  height: 55px;
 }
 
 /* 頭 */
 .skeleton-head {
   position: absolute;
-  top: 2px;
-  left: 18px;
-  width: 14px;
-  height: 14px;
+  top: 5px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
   background: #ecf0f1;
   border-radius: 50%;
 }
 
-/* 胴体 */
+/* 胴体（斜め） */
 .skeleton-spine {
   position: absolute;
   top: 14px;
-  left: 22px;
-  width: 6px;
-  height: 18px;
+  left: 18px;
+  width: 22px;
+  height: 8px;
   background: #ecf0f1;
-  border-radius: 3px;
+  border-radius: 4px;
+  transform: rotate(-35deg);
 }
 
 /* 左腕（上に伸ばす） */
 .skeleton-arms {
   position: absolute;
   top: 8px;
-  left: 4px;
-  width: 18px;
+  left: 8px;
+  width: 14px;
   height: 5px;
   background: #ecf0f1;
   border-radius: 3px;
-  transform: rotate(-30deg);
+  transform: rotate(-60deg);
 }
 
-/* 右腕 */
+/* 右腕（下に伸ばす） */
 .skeleton-leg-l {
   position: absolute;
-  top: 18px;
-  left: 28px;
-  width: 16px;
+  top: 22px;
+  right: 10px;
+  width: 12px;
   height: 5px;
   background: #ecf0f1;
   border-radius: 3px;
-  transform: rotate(20deg);
+  transform: rotate(30deg);
 }
 
 /* 左脚 */
 .skeleton-leg-r {
   position: absolute;
-  top: 30px;
-  left: 10px;
-  width: 18px;
-  height: 5px;
+  bottom: 8px;
+  left: 8px;
+  width: 16px;
+  height: 6px;
   background: #ecf0f1;
   border-radius: 3px;
-  transform: rotate(-20deg);
+  transform: rotate(20deg);
 }
 
 /* 右脚 */
 .skeleton-leg-r2 {
   position: absolute;
-  top: 32px;
-  left: 24px;
+  bottom: 14px;
+  left: 20px;
   width: 16px;
-  height: 5px;
+  height: 6px;
   background: #ecf0f1;
   border-radius: 3px;
-  transform: rotate(40deg);
+  transform: rotate(-30deg);
 }
 
 .app-name {
