@@ -353,7 +353,7 @@ body {
 
 .emo-text {
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   color: #3d3a36;
   letter-spacing: -0.5px;
@@ -361,7 +361,7 @@ body {
 
 .emo-dot {
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #c9a87c;
   margin-left: 1px;
