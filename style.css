@@ -338,6 +338,47 @@ body {
   }
 }
 
+/* emo. 感情分析アイコン */
+.emo-icon {
+  position: relative;
+  border: 2px solid #c9a87c;
+  box-shadow: 0 0 10px rgba(201, 168, 124, 0.3);
+}
+
+.emo-design {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.emo-text {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  color: #3d3a36;
+  letter-spacing: -0.5px;
+}
+
+.emo-dot {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #c9a87c;
+  margin-left: 1px;
+  animation: emo-pulse 2s ease-in-out infinite;
+}
+
+@keyframes emo-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
 /* 転倒検証アイコン（転倒ピクトグラム） */
 .skeleton-icon {
   position: relative;
