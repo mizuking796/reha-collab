@@ -343,6 +343,12 @@ body {
   position: relative;
   border: 2px solid #c9a87c;
   box-shadow: 0 0 10px rgba(201, 168, 124, 0.3);
+  overflow: hidden;
+}
+
+.emo-icon span {
+  font-size: inherit;
+  color: inherit;
 }
 
 .emo-design {
@@ -353,7 +359,7 @@ body {
 
 .emo-text {
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   color: #3d3a36;
   letter-spacing: -0.5px;
@@ -361,7 +367,7 @@ body {
 
 .emo-dot {
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #c9a87c;
   margin-left: 1px;
