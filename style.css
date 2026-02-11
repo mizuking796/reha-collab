@@ -339,6 +339,69 @@ body {
   }
 }
 
+/* PICO Searchアイコン（虫眼鏡+論文） */
+.pico-icon {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(43, 138, 126, 0.3);
+}
+
+.pico-design {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.pico-lens {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+}
+
+.pico-handle {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 12px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.pico-lines {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pico-line {
+  width: 16px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+}
+
+.pico-line:first-child {
+  width: 16px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pico-line:nth-child(2) {
+  width: 12px;
+}
+
+.pico-line:nth-child(3) {
+  width: 14px;
+}
+
 /* emo. 感情分析アイコン */
 .emo-icon {
   position: relative;
