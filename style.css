@@ -449,6 +449,47 @@ body {
   }
 }
 
+/* Morse Translatorアイコン（ドット・ダッシュ） */
+.morse-icon {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
+}
+
+.morse-design {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.morse-dit {
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+  animation: morse-blink 2.4s ease-in-out infinite;
+}
+
+.morse-dah {
+  width: 22px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+  animation: morse-blink 2.4s ease-in-out infinite 0.3s;
+}
+
+.morse-dit:last-child {
+  animation-delay: 0.6s;
+}
+
+@keyframes morse-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
 /* Site Safety Checkerアイコン（シールド+チェック） */
 .ssc-icon {
   position: relative;
