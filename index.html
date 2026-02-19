@@ -170,14 +170,30 @@
 
       <!-- SHK 筋骨神経データベース -->
       <a href="https://mizuking796.github.io/SHK/" class="app-card" target="_blank">
-        <div class="app-icon shk-icon" style="background: linear-gradient(135deg, #1a2332, #2a3a4e);">
-          <div class="shk-design">
-            <div class="shk-node shk-muscle"></div>
-            <div class="shk-node shk-bone"></div>
-            <div class="shk-node shk-nerve"></div>
-            <div class="shk-edge shk-edge-1"></div>
-            <div class="shk-edge shk-edge-2"></div>
-          </div>
+        <div class="app-icon shk-icon" style="background: linear-gradient(135deg, #0d1520, #1a2a3c);">
+          <svg class="shk-svg" viewBox="0 0 60 60" fill="none">
+            <!-- エッジ（接続線） -->
+            <line x1="30" y1="10" x2="14" y2="30" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"/>
+            <line x1="30" y1="10" x2="46" y2="28" stroke="rgba(255,255,255,0.2)" stroke-width="1.2"/>
+            <line x1="14" y1="30" x2="22" y2="48" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <line x1="46" y1="28" x2="38" y2="48" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <line x1="14" y1="30" x2="46" y2="28" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+            <line x1="22" y1="48" x2="38" y2="48" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+            <!-- 筋ノード（赤） -->
+            <circle cx="30" cy="10" r="5" fill="#c47878" opacity="0.9"/>
+            <circle cx="30" cy="10" r="5" fill="none" stroke="#c47878" stroke-width="0.5" opacity="0.4" r="8">
+              <animate attributeName="r" values="5;8;5" dur="3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
+            </circle>
+            <!-- 骨ノード（灰青） -->
+            <rect x="9" y="25" width="10" height="10" rx="2.5" fill="#8a9aa6" opacity="0.9"/>
+            <!-- 神経ノード（金） -->
+            <rect x="41" y="23" width="9" height="9" rx="1.5" fill="#b89a30" opacity="0.9" transform="rotate(45 45.5 27.5)"/>
+            <!-- 関節ノード（緑） -->
+            <circle cx="22" cy="48" r="4" fill="#5da578" opacity="0.85"/>
+            <!-- 靱帯ノード（青緑） -->
+            <circle cx="38" cy="48" r="3.5" fill="#5a9aab" opacity="0.85"/>
+          </svg>
         </div>
         <h3 class="app-name">SHK</h3>
         <p class="app-desc">筋・骨・神経・関節・靱帯・皮膚の542要素をグラフネットワークで可視化する解剖学データベース。</p>

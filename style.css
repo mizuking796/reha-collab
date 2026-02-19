@@ -664,66 +664,9 @@ body {
   box-shadow: 0 0 12px rgba(90, 138, 181, 0.2);
 }
 
-.shk-design {
-  position: relative;
+.shk-svg {
   width: 50px;
   height: 50px;
-}
-
-.shk-node {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.shk-muscle {
-  width: 14px;
-  height: 14px;
-  background: #c47878;
-  top: 4px;
-  left: 18px;
-  box-shadow: 0 0 6px rgba(196, 120, 120, 0.6);
-}
-
-.shk-bone {
-  width: 16px;
-  height: 12px;
-  background: #8a9aa6;
-  border-radius: 4px;
-  bottom: 6px;
-  left: 4px;
-  box-shadow: 0 0 6px rgba(138, 154, 166, 0.6);
-}
-
-.shk-nerve {
-  width: 12px;
-  height: 12px;
-  background: #b89a30;
-  transform: rotate(45deg);
-  border-radius: 2px;
-  bottom: 8px;
-  right: 4px;
-  box-shadow: 0 0 6px rgba(184, 154, 48, 0.6);
-}
-
-.shk-edge {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.4);
-  height: 2px;
-  transform-origin: left center;
-}
-
-.shk-edge-1 {
-  width: 22px;
-  top: 18px;
-  left: 12px;
-  transform: rotate(50deg);
-}
-
-.shk-edge-2 {
-  width: 26px;
-  top: 18px;
-  left: 24px;
-  transform: rotate(110deg);
 }
 
 /* 転倒検証アイコン（転倒ピクトグラム） */
